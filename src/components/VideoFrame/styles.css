@@ -1,0 +1,54 @@
+.video-frame {
+  position: relative;
+}
+
+.video-frame .x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  transform: translateX(50%);
+  margin-right: 0.8em;
+  margin-top: 0.3em;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  --color: #fff;
+  --bg-color: rgba(255, 255, 255, 0.2);
+  --height: 1em;
+  --width: 0.2em;
+  --bd-radius: 6px;
+}
+.video-frame .x:hover {
+  background-color: var(--bg-color);
+}
+
+.video-frame .x::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--width);
+  height: var(--height);
+  transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+  border-radius: var(--bd-radius);
+  background-color: var(--color);
+}
+
+.video-frame .x::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  align-items: center;
+  width: var(--width);
+  height: var(--height);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  border-radius: var(--bd-radius);
+  background-color: var(--color);
+}
+
+.video-frame iframe {
+  aspect-ratio: 16 / 9;
+}

@@ -1,0 +1,80 @@
+.App {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 1em;
+}
+
+.header .form {
+  width: 25%;
+  height: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.header .form .channel {
+  width: 75%;
+  height: 100%;
+  outline: none;
+  color: #fff;
+  background-color: #464649;
+  border: 2px solid #464649;
+  padding: 0.6em 0.5em;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  transition: border 0.2s ease-in-out;
+}
+
+.header .form .channel:hover {
+  border: 2px solid #ffffff4d;
+}
+
+.header .form .btn {
+  width: 25%;
+  height: 100%;
+  outline: none;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  padding: 0.6em 0.5em;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.header .form .btn:hover {
+  background-color: #464649;
+}
+
+.no-live {
+  width: 100%;
+  height: 100%;
+  padding: 1em 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lives {
+  width: 100%;
+  height: 100%;
+  padding: 1em 3em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
