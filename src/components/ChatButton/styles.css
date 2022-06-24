@@ -1,14 +1,14 @@
 .chats .buttons button {
-  outline: none;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  padding: 0.2em 0.5em;
-  border-radius: 6px 6px 0px 0px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+   outline: none;
+   border: none;
+   background-color: rgba(255, 255, 255, 0.15);
+   color: #fff;
+   padding: 0.2em 0.5em;
+   border-radius: 6px 6px 0px 0px;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
 }
 
 .chats .buttons button.active {
-  background-color: rgba(255, 255, 255, 0.25);
+   background-color: rgba(255, 255, 255, 0.25);
 }
