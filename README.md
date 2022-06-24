@@ -14,6 +14,10 @@
 
 A website that allows you to view more than one live from Twitch
 
+## :memo: Preview
+
+<img alt="Image Preview" src="./assets/preview.png">
+
 ## :rocket: Technologies
 
 -  [React](https://pt-br.reactjs.org)
