@@ -7,12 +7,12 @@ const VideoFrame = ({ src, id }) => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    console.log(id);
     let lives = data.lives;
     lives.splice(id, 1);
     setData((prevData) => {
       return {
         ...prevData,
+        channelChat: data.lives.length != 0 ? data.lives[0] : "",
         lives,
       };
     });

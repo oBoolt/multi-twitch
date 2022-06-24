@@ -1,9 +1,18 @@
+/* Main */
+::-webkit-scrollbar {
+  display: none;
+}
+
 .App {
   position: relative;
   min-height: 100vh;
   width: 100%;
 }
 
+main {
+  padding-right: 20%;
+}
+/* Header */
 .header {
   width: 100%;
   height: 10%;
@@ -13,6 +22,10 @@
   flex-direction: column;
   gap: 12px;
   padding-top: 1em;
+}
+
+.header .error {
+  color: #ff3333;
 }
 
 .header .form {
@@ -60,6 +73,21 @@
   background-color: #464649;
 }
 
+.header .clear {
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  padding: 0.4em 0.6em;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.header .clear:hover {
+  background-color: #e91916;
+}
+/* Lives */
 .no-live {
   width: 100%;
   height: 100%;
@@ -77,4 +105,40 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
+}
+/* Chats */
+.chats {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+}
+
+.chats .chat {
+  width: 100%;
+  height: 95%;
+}
+
+.chats .buttons {
+  height: 5%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0.375em;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.chats .buttons::-webkit-scrollbar {
+  display: block;
+  height: 0.5em;
+  background: transparent;
+}
+
+.chats .buttons::-webkit-scrollbar-thumb {
+  background-color: #69696b;
+  border-radius: 12px;
 }

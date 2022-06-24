@@ -10,6 +10,8 @@ export function DataContextProvider({ children }) {
   const [data, setData] = useState({
     lives: [],
     channel: "",
+    channelChat: "",
+    errorMessage: "",
   });
 
   const value = {
